@@ -1,0 +1,24 @@
+<div class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="cancel()">&times;</span>
+    <h2>{{ roupa.id ? 'Editar Roupa' : 'Incluir Roupa' }}</h2>
+    <form (ngSubmit)="save()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" [(ngModel)]=" roupa.nome" name="nome" appCampoObrigatorio required>
+      </div>
+      <div class="form-group">
+        <label for="preco">Preço:</label>
+        <input type="float"  id="preco" [(ngModel)]="roupa.preco" name="preco" appCampoObrigatorio appNumerico appMoeda required>
+   
+      </div>
+      <div class="form-group">
+        <label for="prazo">Prazo:</label>
+        <input type="text" id="prazo" [(ngModel)]="roupa.prazo" name="prazo" appCampoObrigatorio appNumerico required>
+      </div>
+      <button type="submit" class="btn btn-success">Salvar</button>
+      <button type="button" class="btn btn-secondary ml-2" (click)="cancel()">Cancelar</button>
+    </form>
+  </div>
+</div>
+  

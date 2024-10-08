@@ -1,0 +1,45 @@
+<div class="container mt-5">
+  <h2 class="mb-4"> Manutenção de Peças de Roupas</h2>
+  
+  <div *ngIf="mensagemErro" class="alert alert-danger">
+    {{ mensagemErro }}
+  </div>
+  
+    <button class="btn btn-primary mb-3" (click)="iniciarInclusao()" *ngIf="!editando">Incluir Roupa</button>
+
+  <div *ngIf="showModal">
+    <app-roupa-modal [roupa]="roupaSelecionada" (onSave)="salvarRoupa($event)" (onCancel)="cancelar()"></app-roupa-modal>
+  </div>
+
+  <div *ngIf="!editando">
+    <h3 class="mt-4 mb-2">Lista de Roupas</h3>
+    <ul class="list-group">
+      <li class="list-group-item list-header">
+        <div class="id-col">ID.  
+            <button class="btn btn-sm btn-outline-secondary" (click)="ordenarPor('id')">^</button>
+        </div>
+        <div class="name-col">Nome</div>
+        <div class="price-col">Preço
+          <button class="btn btn-sm btn-outline-secondary"(click)="ordenarPor('preco')">^</button>
+        </div>
+        <div class="prazo-col">Prazo</div>
+        
+        <div class="actions-col">Ações</div>
+      </li>
+      <div class="list-group-scroll">
+        <ul class="list-group">
+          <li class="list-group-item list-item" *ngFor="let roupa of roupas">
+            <div class="id-col">{{ roupa.id }}</div>
+            <div class="name-col">{{ roupa.nome }}</div>
+            <div class="price-col">{{ roupa.preco | currency:'BRL':'symbol':'1.2-2'}}</div>
+            <div class="prazo-col">{{ roupa.prazo }}</div>
+            <div class="actions-col">
+              <button class="btn btn-sm btn-outline-primary" (click)="editarRoupa(roupa)">Editar</button>
+              <button class="btn btn-sm btn-outline-danger ml-2" (click)="deleteRoupa(roupa.id)">Excluir</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+</div>

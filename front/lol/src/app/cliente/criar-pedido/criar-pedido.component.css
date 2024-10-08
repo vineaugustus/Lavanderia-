@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;/**/
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 5px;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%; /* Define a posição verticalmente no meio da tela */
+  left: 50%; /* Define a posição horizontalmente no meio da tela */
+  transform: translate(-50%, -50%); /* Move o elemento de volta metade da sua própria largura e altura, para centralizar */
+  max-width: 420px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h1 {
+  text-align: center;
+  position: relative;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper h2 {
+  text-align: center;
+  position: relative;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wrapper h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+}
+
+.wrapper form {
+  margin-top: 30px;
+}
+
+.wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus, .input-box input:valid {
+  border-color: #4070f4;
+}
+
+form .policy {
+  display: flex;
+  align-items: center;
+}
+
+form h3 {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+}
+
+.input-box.button input:hover {
+  background: #0e4bf1;
+}
+
+form .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+form .text h3 a {
+  color: #4070f4;
+  text-decoration: none;
+}

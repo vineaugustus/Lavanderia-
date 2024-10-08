@@ -1,0 +1,48 @@
+/* consultar-pedido.component.css */
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay {
+  position: center;
+  width: "1000px";
+  height: "1000px";
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #888;
+  text-decoration: none;
+}
+
+.close:hover {
+  color: #333;
+}

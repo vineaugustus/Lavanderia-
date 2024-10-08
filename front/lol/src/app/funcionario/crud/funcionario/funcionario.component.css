@@ -1,0 +1,33 @@
+.list-header, .list-item {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.list-header {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.id-col, .name-col, .price-col, .prazo-col, .actions-col {
+    display: flex;
+    justify-content: left;
+  }
+
+.id-col {width: 20px;}
+.name-col {width: 240px;}
+.email-col {width: 240px;}
+.price-col {width: 50px;}
+.prazo-col {width: 80px;}
+.actions-col {width: 100px;}
+
+.list-group {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.list-group-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-bottom: 200px;
+  }

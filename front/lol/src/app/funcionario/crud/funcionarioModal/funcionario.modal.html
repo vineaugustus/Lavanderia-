@@ -1,0 +1,29 @@
+<div class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="cancel()">&times;</span>
+      <h2>{{ funcionario.id ? 'Editar Funcionario' : 'Incluir Funcionario' }}</h2>
+      <form (ngSubmit)="save()">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" id="email" [(ngModel)]=" funcionario.email" name="email" appCampoObrigatorio required>
+        </div>
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" [(ngModel)]=" funcionario.nome" name="nome" appCampoObrigatorio required>
+        </div>
+
+        <div class="form-group">
+          <label for="dtNasc">Data Nasc.:</label>
+          <input type="text"  id="dtNasc" [(ngModel)]="funcionario.dtNasc" name="dtNasc" appCampoObrigatorio  required>
+     
+        </div>
+        <div class="form-group">
+          <label for="senha">Senha:</label>
+          <input type="text" id="senha" [(ngModel)]="funcionario.senha" name="senha" appCampoObrigatorio required>
+        </div>
+        <button type="submit" class="btn btn-success">Salvar</button>
+        <button type="button" class="btn btn-secondary ml-2" (click)="cancel()">Cancelar</button>
+      </form>
+    </div>
+  </div>
+    

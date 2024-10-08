@@ -1,0 +1,40 @@
+<div class="wrapper">
+   <h1>LOL - Lavanderia On-line</h1>
+   <h2>Entrar</h2>
+   <div *ngIf="message" class="alert alert-danger 
+                                alert-dissmissible fade show">
+        {{message}}
+        <a href="#" class="close" data-dismiss="alert"
+                aria-label="close"> &times;</a>
+        <button type="button" class="close" data-dismiss="alert"
+            aria-label="Close" (click)="$event.preventDefault()">
+            <span aria-hidden="true"> &times;</span> 
+        </button>
+   </div>
+   <form #formLogin="ngForm" action="#">
+       <div class="input-box">
+           <input type="text" placeholder="Email" id="email" name="email" [(ngModel)]="login.email" #usuario="ngModel" required>
+       </div>
+
+       <div class="input-box">
+           <input type="text" placeholder="Senha"  id="senha" name="senha" [(ngModel)]="login.senha" #senha="ngModel" required>
+           <div *ngIf="senha.errors && (senha.dirty || senha.touched)" class="alert alert-danger">
+            <div [hidden]="!senha.errors['required']">
+                Digite a senha
+            </div>
+           </div>
+       </div>
+
+       <div class="input-box button">
+         <button type="button" class="btn btn-primary"
+            (click)="logar()"
+            [disabled]="!formLogin.form.valid">
+            <i class="fa fa-save" aria-hidden="true"></i> Logar
+         </button>
+       </div>
+       <div class="text">
+           <!-- <h3>Já tem uma cadastro? <a [routerLink]="['/login']">Login</a></h3> -->
+           <h3>Não possui uma conta? <a href="/autocadastro">Registre-se</a></h3>
+       </div>
+   </form>
+ </div>

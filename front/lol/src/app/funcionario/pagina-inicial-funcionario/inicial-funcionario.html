@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Pedidos em Aberto</h2>
+    <ul class="list-group">
+      <li class="list-group-item list-header">
+        <div class="id-col">ID</div>
+        <div class="name-col">Cliente</div>
+        <div class="price-col">Valor</div>
+        <div class="prazo-col">Data Criação</div>
+        <div class="actions-col">Recolhimento</div>
+      </li>
+      <div class="list-group-scroll">
+        <ul class="list-group">
+          <li class="list-group-item list-item" *ngFor="let pedido of pedidos">
+            <div class="id-col">{{ pedido.id }}</div>
+            <div class="name-col">{{ pedido.cliente }}</div>
+            <div class="price-col">{{ pedido.valor}}</div>
+            <div class="prazo-col">{{ pedido.dataCriacao}}</div>
+            <div class="actions-col">
+              <button class="btn btn-sm btn-outline-primary" (click)="registrarRecolhimento(pedido)">Registrar Recolhimento</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+  

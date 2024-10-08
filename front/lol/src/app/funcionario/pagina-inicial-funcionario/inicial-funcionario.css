@@ -1,0 +1,42 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filters select,
+  .filters input {
+    margin-right: 10px;
+  }
+  
+  .list-header,
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .list-header {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  
+  .list-group-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .id-col, .name-col, .price-col, .prazo-col, .status-col, .actions-col {
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .actions-col {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+  }
+  

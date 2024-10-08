@@ -1,0 +1,316 @@
+{
+  "roupas": [
+    {
+      "id": "1",
+      "nome": "Camiseta Polo Marrom",
+      "preco": "19,45",
+      "prazo": "3"
+    },
+    {
+      "id": "2",
+      "nome": "xBlusa feminina especial",
+      "preco": "28,00",
+      "prazo": 2
+    },
+    {
+      "id": "3",
+      "nome": "Sapato infantil especial 3",
+      "preco": "46,27",
+      "prazo": "2"
+    },
+    {
+      "id": "4",
+      "nome": "Meião de futebol",
+      "preco": "9,90",
+      "prazo": "1"
+    },
+    {
+      "id": "5",
+      "nome": "meia futebol verde",
+      "preco": "8,90",
+      "prazo": "1"
+    },
+    {
+      "id": "6",
+      "nome": "Cueca vermelha Atletico",
+      "preco": "14.00",
+      "prazo": "1"
+    },
+    {
+      "id": "7",
+      "nome": "Cueca Verde Coxa",
+      "preco": "12,00",
+      "prazo": "1"
+    }
+  ],
+  "funcionarios": [
+    {
+      "id": "1",
+      "email": "maria@hotmail.com",
+      "nome": "Maria Santos",
+      "dtNasc": "11/05/2000",
+      "senha": "teste321"
+    },
+    {
+      "id": "2",
+      "email": "jose@hotmail.com",
+      "nome": "Jose Carvalho",
+      "dtNasc": "22/01/1989",
+      "senha": "teste555"
+    }
+  ],
+  "pedidos": [
+    {
+      "ID": 1,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-01",
+      "Valor": 100,
+      "Status": "RECOLHIDO",
+      "id": "2233"
+    },
+    {
+      "ID": 2,
+      "Cliente": "João",
+      "dataCriacao": "07/02/2024",
+      "Valor": 200,
+      "Status": "RECOLHIDO",
+      "id": "6879"
+    },
+    {
+      "ID": 3,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-03",
+      "Valor": 300,
+      "Status": "EM ABERTO",
+      "id": "c70e"
+    },
+    {
+      "ID": 4,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-04",
+      "Valor": 400,
+      "Status": "REJEITADO",
+      "id": "d988"
+    },
+    {
+      "ID": 5,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-05",
+      "Valor": 500,
+      "Status": "CANCELADO",
+      "id": "ddf6"
+    },
+    {
+      "ID": 6,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-06",
+      "Valor": 600,
+      "Status": "RECOLHIDO",
+      "id": "3cba"
+    },
+    {
+      "ID": 7,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-07",
+      "Valor": 700,
+      "Status": "RECOLHIDO",
+      "id": "427c"
+    },
+    {
+      "ID": 8,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-08",
+      "Valor": 800,
+      "Status": "FINALIZADO",
+      "id": "ccb9"
+    },
+    {
+      "ID": 9,
+      "Cliente": "João",
+      "dataCriacao": "2024-07-09",
+      "Valor": 900,
+      "Status": "FINALIZADO",
+      "id": "0f14"
+    },
+    {
+      "ID": 10,
+      "Cliente": "José",
+      "dataCriacao": "2024-07-10",
+      "Valor": 100,
+      "Status": "EM ABERTO",
+      "id": "8b55"
+    },
+    {
+      "ID": 11,
+      "Cliente": "José",
+      "dataCriacao": "2024-07-11",
+      "Valor": 200,
+      "Status": "AGUARDANDO PAGAMENTO",
+      "id": "d81d"
+    },
+    {
+      "ID": 12,
+      "Cliente": "José",
+      "dataCriacao": "2024-07-12",
+      "Valor": 300,
+      "Status": "AGUARDANDO PAGAMENTO",
+      "id": "4cb2"
+    },
+    {
+      "ID": 13,
+      "Cliente": "José",
+      "dataCriacao": "2024-07-13",
+      "Valor": 400,
+      "Status": "PAGO",
+      "id": "b356"
+    },
+    {
+      "ID": 14,
+      "Cliente": "José",
+      "dataCriacao": "2024-07-14",
+      "Valor": 500,
+      "Status": "FINALIZADO",
+      "id": "2418"
+    },
+    {
+      "ID": 15,
+      "Cliente": "José",
+      "dataCriacao": "2024-07-15",
+      "Valor": 600,
+      "Status": "FINALIZADO",
+      "id": "136b"
+    },
+    {
+      "ID": 16,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-16",
+      "Valor": 100,
+      "Status": "RECOLHIDO",
+      "id": "2b80"
+    },
+    {
+      "ID": 17,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-17",
+      "Valor": 200,
+      "Status": "AGUARDANDO PAGAMENTO",
+      "id": "13d7"
+    },
+    {
+      "ID": 18,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-18",
+      "Valor": 300,
+      "Status": "AGUARDANDO PAGAMENTO",
+      "id": "d7ac"
+    },
+    {
+      "ID": 19,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-19",
+      "Valor": 400,
+      "Status": "PAGO",
+      "id": "8786"
+    },
+    {
+      "ID": 20,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-20",
+      "Valor": 500,
+      "Status": "PAGO",
+      "id": "1f05"
+    },
+    {
+      "ID": 21,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-21",
+      "Valor": 600,
+      "Status": "FINALIZADO",
+      "id": "9a93"
+    },
+    {
+      "ID": 22,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-22",
+      "Valor": 700,
+      "Status": "FINALIZADO",
+      "id": "4ac1"
+    },
+    {
+      "ID": 23,
+      "Cliente": "Joana",
+      "dataCriacao": "2024-07-23",
+      "Valor": 800,
+      "Status": "FINALIZADO",
+      "id": "cf1c"
+    },
+    {
+      "ID": 24,
+      "Cliente": "Joaquina",
+      "dataCriacao": "2024-07-24",
+      "Valor": 100,
+      "Status": "RECOLHIDO",
+      "id": "d1a2"
+    },
+    {
+      "ID": 25,
+      "Cliente": "Joaquina",
+      "dataCriacao": "2024-07-25",
+      "Valor": 200,
+      "Status": "RECOLHIDO",
+      "id": "457b"
+    },
+    {
+      "ID": 26,
+      "Cliente": "Joaquina",
+      "dataCriacao": "2024-07-26",
+      "Valor": 300,
+      "Status": "AGUARDANDO PAGAMENTO",
+      "id": "ac22"
+    },
+    {
+      "ID": 27,
+      "Cliente": "Joaquina",
+      "Data": "2024-07-27",
+      "Valor": 400,
+      "Status": "PAGO",
+      "id": "b3d1"
+    },
+    {
+      "ID": 28,
+      "Cliente": "Joaquina",
+      "Data": "2024-07-28",
+      "Valor": 500,
+      "Status": "PAGO",
+      "id": "d071"
+    },
+    {
+      "ID": 29,
+      "Cliente": "Joaquina",
+      "dataCriacao": "2024-07-29",
+      "Valor": 600,
+      "Status": "FINALIZADO",
+      "id": "4bb3"
+    },
+    {
+      "ID": 30,
+      "Cliente": "Joaquina",
+      "dataCriacao": "2024-07-30",
+      "Valor": 700,
+      "Status": "FINALIZADO",
+      "id": "5860"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "cpf":  "08553192911",
+      "nome": "thales teste",
+      "email": "thalesgc2011@hotmail.com",
+      "address": "rua das pedras",
+      "phone": "41987973190",
+      "password": "123",
+      "profile": "ADMIN"
+    }
+  ]
+}

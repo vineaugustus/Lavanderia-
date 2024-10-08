@@ -1,0 +1,26 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filters select,
+  .filters input {
+    margin-right: 10px;
+  }
+  
+  .list-header,
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .list-header {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  

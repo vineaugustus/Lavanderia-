@@ -1,0 +1,63 @@
+<div class="wrapper" id="wrapper">
+    <h1>LOL - Lavanderia On-line</h1>
+    <h2>Tela de Pedido</h2>
+
+    <div class="input-box button-container">
+        <button type="button" id="incluirPeca">Incluir Peça</button>
+        <button type="button" id="concluirPedido">Concluir Pedido</button>
+    </div><br>
+    
+    <div id="valorTotal">Valor: </div>
+
+    <form id="pedidoForm">
+        <div class="input-box">
+            <p>Insira a roupa que deseja lavar:</p>
+            <input type="text" id="roupaInput" size="40" />
+            <label for="pedido">Lista de Pedidos:</label>
+            <ul id="listaPedidos">
+                <!-- Adicione mais itens de pedido conforme necessário -->
+            </ul>
+        </div>
+    </form>
+</div>
+
+<!--<script>
+    const roupaInput = document.getElementById('roupaInput');
+    const listaPedidos = document.getElementById('listaPedidos');
+    const incluirPecaButton = document.getElementById('incluirPeca');
+    const concluirPedidoButton = document.getElementById('concluirPedido');
+    const valorTotalElement = document.getElementById('valorTotal');
+    const wrapper = document.getElementById('wrapper');
+
+    let valorTotal = 0.00;
+    let pedidoConcluido = false; // Flag para verificar se o pedido foi concluído
+
+    incluirPecaButton.addEventListener('click', function () {
+        if (!pedidoConcluido) { // Verifica se o pedido ainda não foi concluído
+            const novoPedido = roupaInput.value;
+            if (novoPedido.trim() !== '') {
+                const novoItem = document.createElement('li');
+                novoItem.textContent = novoPedido;
+                listaPedidos.appendChild(novoItem);
+                roupaInput.value = ''; // Limpa o campo de entrada
+                valorTotal += 2.00; // Adiciona R$ 2 ao valor total
+
+                // Definir um tempo pequeno para dar tempo à interface de atualizar
+                setTimeout(() => {
+                    const wrapperHeight = wrapper.clientHeight;
+                    wrapper.style.height = `${wrapperHeight + novoItem.clientHeight}px`;
+                }, 10);
+            }
+        }
+    });
+
+    concluirPedidoButton.addEventListener('click', function () {
+        pedidoConcluido = true;
+        incluirPecaButton.disabled = true; // Desativa o botão "Incluir Peça"
+        valorTotalElement.textContent = `Valor total do pedido: R$ ${valorTotal}.O motorista está a caminho do endereço cadastrado para buscar as roupas`;
+        setTimeout(() => {
+            const wrapperHeight = wrapper.clientHeight;
+            wrapper.style.height = `${wrapperHeight + 80}px`;
+        }, 10);
+    });
+</script>-->

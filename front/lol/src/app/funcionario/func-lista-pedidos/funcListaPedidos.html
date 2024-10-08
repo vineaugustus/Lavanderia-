@@ -1,0 +1,47 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Visualização de Pedidos</h2>
+  
+    <div class="filters mb-4">
+      <label for="filtro" class="form-label me-2">Filtrar pedidos:</label>
+      <select id="filtro" class="form-select me-2" [(ngModel)]="filtro">
+        <option value="todos">Todos</option>
+        <option value="hoje">Hoje</option>
+        <option value="periodo">Por Período</option>
+      </select>
+      <div *ngIf="filtro === 'periodo'" class="d-flex align-items-center">
+        <label for="dataInicio" class="form-label me-2">Início:</label>
+        <input type="date" id="dataInicio" class="form-control me-2" [(ngModel)]="dataInicio" />
+        <label for="dataFim" class="form-label me-2">Fim:</label>
+        <input type="date" id="dataFim" class="form-control me-2" [(ngModel)]="dataFim" />
+      </div>
+      <button class="btn btn-primary" (click)="filtrarPedidos()">Filtrar</button>
+    </div>
+  
+    <ul class="list-group">
+      <li class="list-group-item list-header d-flex justify-content-between">
+        <div class="id-col">ID</div>
+        <div class="name-col">Cliente</div>
+        <div class="price-col">Valor</div>
+        <div class="prazo-col">Data Criação</div>
+        <div class="status-col">Status</div>
+        <div class="actions-col">Ações</div>
+      </li>
+      <div class="list-group-scroll">
+        <ul class="list-group">
+          <li class="list-group-item list-item d-flex justify-content-between" *ngFor="let pedido of pedidos" [ngClass]="getStatusClasse(pedido.status)">
+            <div class="id-col">{{ pedido.id }}</div>
+            <div class="name-col">{{ pedido.cliente }}</div>
+            <div class="price-col">{{ pedido.valor }}</div>
+            <div class="prazo-col">{{ pedido.dataCriacao }}</div>
+            <div class="status-col">{{ pedido.status }}</div>
+            <div class="actions-col">
+              <button *ngIf="pedido.status === 'EM ABERTO'" class="btn btn-sm btn-outline-primary" (click)="confirmarRecolhimento(pedido)">Confirmar Recolhimento</button>
+              <button *ngIf="pedido.status === 'RECOLHIDO'" class="btn btn-sm btn-outline-primary" (click)="confirmarLavagem(pedido)">Confirmar Lavagem</button>
+              <button *ngIf="pedido.status === 'PAGO'" class="btn btn-sm btn-outline-primary" (click)="finalizarPedido(pedido)">Finalizar Pedido</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+  

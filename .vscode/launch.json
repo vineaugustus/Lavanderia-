@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LolApplication<lol>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.net.lol.LolApplication",
+            "projectName": "lol",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

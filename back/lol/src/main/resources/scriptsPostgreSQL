@@ -1,0 +1,39 @@
+
+	1- Script criação banco
+
+-- Database: lol
+
+-- DROP DATABASE IF EXISTS lol;
+
+CREATE DATABASE lol
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.utf8'
+    LC_CTYPE = 'Portuguese_Brazil.utf8'
+    LOCALE_PROVIDER = 'libc'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+
+	2- Script criação tabela roupas
+	
+	CREATE TABLE tb_roupa (
+	    id SERIAL PRIMARY KEY,
+	    nome VARCHAR(255) NOT NULL,
+	    preco NUMERIC(10, 2) NOT NULL,
+	    prazo INT NOT NULL
+	);
+	
+
+	1- Script para popular tabela roupas
+
+
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Camiseta Polo Marrom', 19.45, 3);
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Blusa feminina especial', 28.00, 2);
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Sapato infantil especial 3', 46.27, 2);
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Meião de futebol', 9.90, 1);
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Meia futebol verde', 8.90, 1);
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Cueca vermelha Atletico', 14.00, 1);
+INSERT INTO tb_roupa (nome, preco, prazo) VALUES ('Cueca Verde Coxa', 12.00, 1);
